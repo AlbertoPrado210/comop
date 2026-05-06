@@ -1,0 +1,100 @@
+/* Contenedor principal con colores alusivos */
+.main-container-mother {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #d81b60 0%, #880e4f 100%); /* Degradado magenta/fucsia */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+.header-banner {
+    background-color: #fce4ec;
+    color: #880e4f;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #f8bbd0;
+}
+
+h2 {
+    color: #ad1457;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+p {
+    color: #444;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 0.85rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #f8bbd0; /* Borde rosa suave */
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #d81b60;
+}
+
+/* Botón llamativo con color contrastante */
+.btn-mother {
+    width: 100%;
+    padding: 15px;
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(216, 27, 96, 0.3);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-mother:hover:not(:disabled) {
+    background-color: #ad1457;
+    transform: translateY(-2px);
+}
+
+.btn-mother:disabled {
+    background-color: #f48fb1;
+    cursor: not-allowed;
+}
+
+.footer-note {
+    font-size: 0.7rem;
+    margin-top: 20px;
+    color: #ad1457;
+    font-weight: 500;
+}

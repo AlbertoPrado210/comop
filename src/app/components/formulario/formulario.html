@@ -1,0 +1,36 @@
+<div class="main-container-mother">
+  <div class="card">
+    <!-- Encabezado de la Campaña -->
+    <div class="header-banner">
+        <h3 style="margin: 0;">BIENESTAR INSTITUCIONAL 2026</h3>
+    </div>
+
+    <h2>¡SORTEO DÍA DE LA MADRE!</h2>
+    <p>Regístrate para participar en el sorteo de <strong>Canastas Gourmet</strong> y <strong>Almuerzos de Honor</strong> para el personal y sus familias.</p>
+
+    <form [formGroup]="registroForm" (ngSubmit)="enviarDatos()">
+      <div class="input-group">
+        <label>Grado / Nombre y Apellidos</label>
+        <input type="text" formControlName="nombre" placeholder="Nombre completo">
+      </div>
+
+      <div class="input-group">
+        <label>Correo Electrónico Institucional</label>
+        <input type="email" formControlName="email" placeholder="usuario@correo.mil.pe">
+      </div>
+
+      <div class="input-group">
+        <label>DNI / CIP del Titular</label>
+        <input type="text" formControlName="dni" placeholder="Ingresa tu documento">
+      </div>
+
+      <button type="submit" [disabled]="!registroForm.valid" class="btn-mother">
+        RECLAMAR MI NÚMERO DE SORTEO
+      </button>
+    </form>
+
+    <p class="footer-note">
+      * Promoción válida para todo el personal. Fecha del sorteo: 08 de Mayo.
+    </p>
+  </div>
+</div>
