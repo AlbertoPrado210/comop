@@ -14,9 +14,9 @@ export class GraciasParticipacionComponent {
   constructor(private router: Router) {} // Inyectamos el Router en el constructor
 
   volver() {
-    this.router.navigate(['/']);
+    // this.router.navigate(['/']);
 
     // OPCIONAL: Podrías redirigirlos a la web oficial de la institución
-    // window.location.href = 'https://www.gob.pe/fap';
+    window.location.href = 'https://portaldigpe.fap.mil.pe/';
   }
 }
