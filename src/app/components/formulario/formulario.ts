@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-formulario',
@@ -21,7 +22,7 @@ export class FormularioComponent {
 
 enviarDatos() {
   if (this.registroForm.valid) {
-    const url = 'http://localhost:5000/api/participar';
+    const url = `${environment.apiUrl}/api/participar`;
     this.http.post(url, this.registroForm.value).subscribe({
       next: () => {
         // Redirección disimulada
