@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://38.187.18.126:5000'
+  apiUrl: 'https://portaldigpe.fap.mil.pe.digpe.online:5000'
 };
